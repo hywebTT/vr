@@ -1,189 +1,222 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant" class="no-js">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/vr.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
-  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>貿協AEM</title>
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+            <script src="js/respond.min.js"></script>
+        <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="src/css/tsite-common.min.css" />
+    <link rel="stylesheet" href="src/components/header_style1/header.css" />
+    <style>
+        .tsite-wrap-A {
+            max-width: 1200px;
+            margin: 0em auto 1em;
+            padding: 15px 15px 3em;
+            clear: both;
+            background: #fff;
+            overflow: auto;
+        }
+
+        .tsite-wrap-A h1 {
+            display: block;
+            margin: 0px auto;
+            max-width: 300px;
+            float: left;
+            margin-right: 1em;
+            font-size: 3em;
+            margin-top: 0.5em;
+        }
+
+        p {
+            font-size: .875rem;
+        }
+
+        p span,
+        p code {
+            color: red;
+        }
+
+        @media screen and (max-width: 545px) {
+            .tsite-wrap-A h1 {
+                max-width: 100%;
+                float: none;
+                text-align: center;
+                display: block;
+                margin: 1rem 0;
+            }
+        }
+
+        .tsite-wrap-A h1 img {
+            width: 300px;
+        }
+
+        .tsite-wrap-A tbody tr td {
+            width: 15%;
+        }
+
+        .tsite-wrap-A td img {
+            width: 100%;
+            height: 100px;
+            display: block;
+            border: 1px solid #ddd;
+        }
+
+        .tsite-wrap-A tr th.num,
+        .tsite-wrap-A tr td.num {
+            width: 5%;
+        }
+
+        .tsite-wrap-A {
+            counter-reset: num;
+        }
+
+        .tsite-wrap-A table {
+            margin-bottom: 1em;
+        }
+
+        .tsite-wrap-A table td a {
+            white-space: nowrap;
+        }
+
+        .tsite-wrap-A table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: 0.5em 0;
+            color: #ff5050;
+        }
+
+        .tsite-wrap-A tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, '.') ' ';
+        }
+
+        .tsite-wrap-A .btn_grp {
+            text-align: right;
+            overflow: hidden;
+        }
+
+        .tsite-wrap-A .btn {
+            line-height: 3;
+            margin: 0 0 0 auto;
+        }
+
+        @media screen and (max-width: 545px) {
+            .tsite-wrap-A .btn_grp {
+                text-align: center;
+            }
+
+            .tsite-wrap-A .btn {
+                margin: 0 auto 1em;
+            }
+        }
+
+        .tsite-wrap-A hr {
+            clear: both;
+        }
+
+        @media screen and (max-width: 767px) {
+            .tsite-wrap-A .table_wrapper {
+                width: 100%;
+                overflow: hidden;
+                overflow-x: auto;
+            }
+
+            .tsite-wrap-A td {
+                min-width: 200px;
+            }
+
+            .tsite-wrap-A th.num,
+            .tsite-wrap-A td.num {
+                width: 10%;
+                max-width: 40px;
+                min-width: auto;
+            }
+        }
+    </style>
 </head>
 
 <body>
-  <div class="wrap">
-    <div class="vr_header vr_red">
-      <div class="vr_logo"><img src="images/taiwan_trade.png" alt=""></div>
-      <span>X</span>
-      <h1 class="vr_title"><img src="images/kv-title-1.png" alt=""></h1>
+    <div class="tsite-wrap-A">
+        <h1>Demo</h1>
+        <div class="btn_grp">
+            <a href="https://github.com/HywebU00/2021_W_TT_AEM" class="btn" target="_blank"><span>download</span></a>
+        </div>
+        <hr />
+        <div class="table_wrapper">
+            <!-- hyUI 標準頁面 -->
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>頁面名稱</th>
+                        <th>header樣式</th>
+                        <th>連結</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="num"></td>
+                        <td>紅</td>
+                        <td></td>
+                        <td><a href="vr_red.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>紫</td>
+                        <td></td>
+                        <td><a href="vr_purple.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>橘</td>
+                        <td></td>
+                        <td><a href="vr_orange.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>綠</td>
+                        <td></td>
+                        <td><a href="vr_green.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>藍</td>
+                        <td></td>
+                        <td><a href="vr_blue.html"></a></td>
+                    </tr>
+                    <tr>
+                        <td class="num"></td>
+                        <td>黑/白</td>
+                        <td></td>
+                        <td><a href="vr_black.html"></a></td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+       
     </div>
-    <div class="vr_hero" style="background: url(images/bg_red.jpeg) no-repeat center 0;">
-      <!-- vr_swiperbox -->
-      <div class="vr_swiperbox vr_red">
-        <div class="vr_swiper_title">
-          Ouedkniss
-        </div>
-        <!-- Slider main container -->
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <div class="vr_swiper_text">
-                Created In 2006, Ouedkniss brings together the largest Algerian online community, allowing them to buy/sell products in dozens of different categories. It’s objective is to facilitate the daily life of Algerians, the customer can access our online store
-                and place an order at any time in a few clicks!
-              </div>
-              <div class="vr_swiper_more">
-                <div class="vr_swiper_img">
-                  <img src="images/photo-1-Rakuten.jpeg" alt="">
-                </div>
-                <div class="vr_swiper_salespbox">
-                  <div class="vr_swiper_salesname">Oussama ZENNADI</div>
-                  <div class="vr_swiper_salesposition">Commercial Manager</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="vr_swiper_text">
-                Created In 2006, Ouedkniss brings together the largest Algerian online community, allowing them to buy/sell products in dozens of different categories. It’s objective is to facilitate the daily life of Algerians, the customer can access our online store
-                and place an order at any time in a few clicks!
-              </div>
-              <div class="vr_swiper_more">
-                <div class="vr_swiper_img"><img src="images/photo-1-Rakuten.jpeg" alt=""></div>
-                <div class="vr_swiper_salespbox">
-                  <div class="vr_swiper_salesname">Oussama ZENNADI</div>
-                  <div class="vr_swiper_salesposition">Commercial Manager</div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="vr_swiper_text">
-                Created In 2006, Ouedkniss brings together the largest Algerian online community, allowing them to buy/sell products in dozens of different categories. It’s objective is to facilitate the daily life of Algerians, the customer can access our online store
-                and place an order at any time in a few clicks!
-              </div>
-              <div class="vr_swiper_more">
-                <div class="vr_swiper_img"><img src="images/photo-1-Rakuten.jpeg" alt=""></div>
-                <div class="vr_swiper_salespbox">
-                  <div class="vr_swiper_salesname">Oussama ZENNADI</div>
-                  <div class="vr_swiper_salesposition">Commercial Manager</div>
-                </div>
-              </div>
-            </div>
-            ...
-          </div>
-          <!-- If we need navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div> -->
-        </div>
-      </div>
-      <!-- vr_images -->
-      <div class="vr_images vr_red">
-        <div class="vr_img">
-          <img src="images/rf_web-img2.png" alt="">
-        </div>
-        <div class="vr_btn">
-          <a href="" class="vr_btn_meetings">Meetings</a>
-          <a href="" class="vr_btn_survey">Survey</a>
-        </div>
-      </div>
     </div>
-    <div class="vr_schedule_wrap vr_red">
-      <!-- ve_time_select 選擇時間區間 -->
-      <div class="ve_time_select">
-        <a href="" class="active">15:00~16:00</a>
-        <a href="">16:00~17:00</a>
-        <a href="">17:00~18:00</a>
-      </div>
-      <div class="vr_schedule">
-        <!-- vr_time_table 時段 -->
-        <div class="vr_time_table">
-          <!-- vr_time_block -->
-          <div class="vr_time_block">
-            <div class="vr_time"><span class="vr_number">1</span>15:00~15:15</div>
-            <div class="vr_offtitle">RICE EAR LTD</div>
-          </div>
-          <!-- vr_time_block -->
-          <div class="vr_time_block active">
-            <div class="vr_time"><span class="vr_number">2</span>15:15~15:30</div>
-            <div class="vr_offtitle">ATHENA CULTURE & TECHNOLOGY CORP</div>
-          </div>
-          <!-- vr_time_block -->
-          <div class="vr_time_block">
-            <div class="vr_time"><span class="vr_number">3</span>15:30~15:45</div>
-            <div class="vr_offtitle">VCOMPLUS TECHNOLOGY INC.</div>
-          </div>
-          <!-- vr_time_block -->
-          <div class="vr_time_block">
-            <div class="vr_time"><span class="vr_number">4</span>15:45~16:00</div>
-            <div class="vr_offtitle">VCOMPLUS TECHNOLOGY INC.</div>
-          </div>
-        </div>
-        <div class="vr_exhibition_wrap">
-          <div class="vr_exhibition_header">
-            <div class="vr_exhibition_title">
-              <span class="vr_exhibition_logo"><img src="images/Rakuten_cp_logo2.png" alt=""></span>
-              <span class="vr_exhibition_name">ATHENA CULTURE AND TECHNOLOGY CORPORATION</span>
-            </div>
-            <div class="vr_exhibition_card">
-              <div class="vr_exhibition_time">
-                <span class="vr_number">1</span>15:15~15:30
-              </div>
-              <div class="vr_ceo">
-                <div class="vr_ceo_pic">
-                  <img src="images/franch_card_02.png" alt="">
-                </div>
-                <div class="vr_ceo_info">
-                  <div class="vr_ceo_name">Jane Hsieh</div>
-                  <div class="vr_ceo_position">Manager</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="vr_exhibition_info">
-            <div class="vr_info_text">
-              <div class="vr_info_title">FEATURE PRODUCTS</div>
-              <div class="vr_info_content">Coffee dripper set, Tableware, Cookware</div>
-            </div>
-            <div class="vr_info_link">
-              <div class="icon_globe"><a href="https://jla.en.taiwantrade.com/" target="_blank">https://jla.en.taiwantrade.com/</a>
-              </div>
-              <div class="icon_star">2022 TAIWAN EXCELLENCE</div>
-            </div>
-          </div>
-          <div class="vr_exhibition_frame">
-            <a href="" class="vr_fullscreen">FULL SCREEN</a>
-            <iframe src="https://taiwantrade.istaging.com/cb2e2927-86e2-4353-91af-3cd76728097f?index=15&panobar=false
-											" id="MyFrame" name="MyFrame" marginwidth="0" marginheight="0" scrolling="auto" frameborder="0" align="center"></iframe>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-    const swiper = new Swiper('.swiper', {
-      // Optional parameters
-      // direction: 'vertical',
-      loop: true,
-
-      // If we need pagination
-      // pagination: {
-      //     el: '.swiper-pagination',
-      // },
-
-      // Navigation arrows
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-
-      // And if we need scrollbar
-      // scrollbar: {
-      //     el: '.swiper-scrollbar',
-      // },
-    });
-  </script>
+    <script src="src/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function () {
+            $('tbody')
+                .find('a')
+                .each(function (index, el) {
+                    var Link = $(this).attr('href').substring(4);
+                    $(this).text(Link);
+                });
+        });
+    </script>
 </body>
 
 </html>
