@@ -1,0 +1,119 @@
+@import '../variable'; //變數
+$site: index($themeColor, red);
+.vr_images {
+    width: 35%;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 1.5rem 10px;
+    }
+    .vr_img {
+        width: 100%;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 1rem;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .vr_btn {
+        @media screen and (max-width: 768px) {
+            text-align: center;
+        }
+        a {
+            font-size: 22px;
+            font-weight: bold;
+            color: #020202;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #fff;
+            padding: 12px;
+            box-shadow: 3px 4px 0px 0px #485060;
+            background: linear-gradient(to bottom, #fff 5%, #b2bfce 100%);
+            border-radius: 12px;
+            border: 1px solid #fff;
+            display: inline-block;
+            cursor: pointer;
+            margin-right: 8px;
+            &:before {
+                content: "";
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                width: 32px;
+                height: 32px;
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 8px;
+            }
+            &:hover {
+                background: linear-gradient(to bottom, #dfdfdf 5%, #fff 100%);
+                background-color: #4e6b8a;
+            }
+        }
+        .vr_btn_meetings {
+            margin-bottom: 10px;
+            &:before {
+                content: "";
+                background-size: 32px 32px;
+            }
+        }
+        .vr_btn_survey {
+            &:before {
+                content: "";
+                background-size: 32px 32px;
+                background-image: url("../images/vr_icon02_red.png");
+            }
+        }
+    }
+    &.vr_blue {
+        .vr_btn .vr_btn_meetings:before {
+            background-image: url("../images/vr_icon01_blue.png");
+        }
+        .vr_btn .vr_btn_survey:before {
+            background-image: url("../images/vr_icon02_blue.png");
+        }
+    }
+    &.vr_green {
+        .vr_btn .vr_btn_meetings:before {
+            background-image: url("../images/vr_icon01_green.png");
+        }
+        .vr_btn .vr_btn_survey:before {
+            background-image: url("../images/vr_icon02_green.png");
+        }
+    }
+    &.vr_black {
+        .vr_btn .vr_btn_meetings:before {
+            background-image: url("../images/vr_icon01_black.png");
+        }
+        .vr_btn .vr_btn_survey:before {
+            background-image: url("../images/vr_icon02_black.png");
+        }
+    }
+    &.vr_red {
+        .vr_btn .vr_btn_meetings:before {
+            background-image: url("../images/vr_icon01_red.png");
+        }
+        .vr_btn .vr_btn_survey:before {
+            background-image: url("../images/vr_icon02_red.png");
+        }
+    }
+    &.vr_orange {
+        .vr_btn .vr_btn_meetings:before {
+            background-image: url("../images/vr_icon01_orange.png");
+        }
+        .vr_btn .vr_btn_survey:before {
+            background-image: url("../images/vr_icon02_orange.png");
+        }
+    }
+    &.vr_purple {
+        .vr_btn .vr_btn_meetings:before {
+            background-image: url("../images/vr_icon01_purple.png");
+        }
+        .vr_btn .vr_btn_survey:before {
+            background-image: url("../images/vr_icon02_purple.png");
+        }
+    }
+}

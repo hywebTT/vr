@@ -1,0 +1,1523 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+}
+
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.vr_header {
+  width: 100%;
+  height: 108px;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+}
+
+.vr_header .vr_logo img {
+  max-height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .vr_header .vr_logo img {
+    max-height: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .vr_header .vr_logo img {
+    max-height: 60px;
+  }
+}
+
+.vr_header .vr_title {
+  margin: 0;
+}
+
+.vr_header .vr_title img {
+  max-height: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  .vr_header .vr_title img {
+    max-height: 70px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .vr_header .vr_title img {
+    max-height: 60px;
+  }
+}
+
+.vr_header span {
+  font-size: 38px;
+  width: 5%;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_header span {
+    display: none;
+  }
+}
+
+.vr_header.vr_blue {
+  background: #1b9cfe;
+}
+
+.vr_header.vr_green {
+  background: #5cc5bb;
+}
+
+.vr_header.vr_black {
+  background: #ffc50d;
+}
+
+.vr_header.vr_red {
+  background: #bf0000;
+}
+
+.vr_header.vr_orange {
+  background: #ff7a1e;
+}
+
+.vr_header.vr_purple {
+  background: #9f98f4;
+}
+
+.vr_hero {
+  width: 100%;
+  padding: 0 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 10px;
+  }
+}
+
+.vr_images {
+  width: 35%;
+  padding: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_images {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 1.5rem 10px;
+  }
+}
+
+.vr_images .vr_img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_images .vr_img {
+    margin-bottom: 1rem;
+  }
+}
+
+.vr_images .vr_img img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_images .vr_btn {
+    text-align: center;
+  }
+}
+
+.vr_images .vr_btn a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #020202;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #fff;
+  padding: 12px;
+  -webkit-box-shadow: 3px 4px 0px 0px #485060;
+          box-shadow: 3px 4px 0px 0px #485060;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #fff), to(#b2bfce));
+  background: linear-gradient(to bottom, #fff 5%, #b2bfce 100%);
+  border-radius: 12px;
+  border: 1px solid #fff;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.vr_images .vr_btn a:before {
+  content: "";
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.vr_images .vr_btn a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #dfdfdf), to(#fff));
+  background: linear-gradient(to bottom, #dfdfdf 5%, #fff 100%);
+  background-color: #4e6b8a;
+}
+
+.vr_images .vr_btn .vr_btn_meetings {
+  margin-bottom: 10px;
+}
+
+.vr_images .vr_btn .vr_btn_meetings:before {
+  content: "";
+  background-size: 32px 32px;
+}
+
+.vr_images .vr_btn .vr_btn_survey:before {
+  content: "";
+  background-size: 32px 32px;
+  background-image: url("../images/vr_icon02_red.png");
+}
+
+.vr_images.vr_blue .vr_btn .vr_btn_meetings:before {
+  background-image: url("../images/vr_icon01_blue.png");
+}
+
+.vr_images.vr_blue .vr_btn .vr_btn_survey:before {
+  background-image: url("../images/vr_icon02_blue.png");
+}
+
+.vr_images.vr_green .vr_btn .vr_btn_meetings:before {
+  background-image: url("../images/vr_icon01_green.png");
+}
+
+.vr_images.vr_green .vr_btn .vr_btn_survey:before {
+  background-image: url("../images/vr_icon02_green.png");
+}
+
+.vr_images.vr_black .vr_btn .vr_btn_meetings:before {
+  background-image: url("../images/vr_icon01_black.png");
+}
+
+.vr_images.vr_black .vr_btn .vr_btn_survey:before {
+  background-image: url("../images/vr_icon02_black.png");
+}
+
+.vr_images.vr_red .vr_btn .vr_btn_meetings:before {
+  background-image: url("../images/vr_icon01_red.png");
+}
+
+.vr_images.vr_red .vr_btn .vr_btn_survey:before {
+  background-image: url("../images/vr_icon02_red.png");
+}
+
+.vr_images.vr_orange .vr_btn .vr_btn_meetings:before {
+  background-image: url("../images/vr_icon01_orange.png");
+}
+
+.vr_images.vr_orange .vr_btn .vr_btn_survey:before {
+  background-image: url("../images/vr_icon02_orange.png");
+}
+
+.vr_images.vr_purple .vr_btn .vr_btn_meetings:before {
+  background-image: url("../images/vr_icon01_purple.png");
+}
+
+.vr_images.vr_purple .vr_btn .vr_btn_survey:before {
+  background-image: url("../images/vr_icon02_purple.png");
+}
+
+.vr_swiperbox {
+  display: block;
+  width: 65%;
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_swiperbox {
+    width: 100%;
+  }
+}
+
+.vr_swiperbox .vr_swiper_title {
+  font-size: 45px;
+  font-weight: 900;
+  margin: 1rem .5rem;
+  line-height: 41px;
+  color: #666;
+}
+
+.vr_swiperbox .swiper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide {
+  padding: .5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_text {
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 0px;
+  margin-bottom: 15px;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more {
+  background: #ffffff;
+  padding: 8px;
+  -webkit-transition: all .6s;
+  transition: all .6s;
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0px 0px 10px #9d9c9c;
+          box-shadow: 0px 0px 10px #9d9c9c;
+  width: 360px;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+  padding: 6px;
+  border-radius: 5px;
+  margin-right: 12px;
+  position: relative;
+  background: #666;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 34px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 20px;
+  border-color: transparent transparent transparent #666;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img img {
+  width: 72px;
+  height: 72px;
+  display: block;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_salespbox {
+  background: #f2f2f2;
+  padding: 8px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  color: #646464;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_salespbox .vr_swiper_salesname {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 34px;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_swiperbox .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_salespbox .vr_swiper_salesname {
+    font-size: 20px;
+    white-space: normal;
+  }
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-button-prev {
+  left: 0;
+}
+
+.vr_swiperbox .swiper .swiper-wrapper .swiper-button-next {
+  right: 0;
+}
+
+.vr_swiperbox.vr_blue .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+  background: #1b9cfe;
+}
+
+.vr_swiperbox.vr_blue .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img:before {
+  border-color: transparent transparent transparent #1b9cfe;
+}
+
+.vr_swiperbox.vr_blue .vr_swiper_title {
+  color: #1b9cfe;
+}
+
+.vr_swiperbox.vr_green .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+  background: #5cc5bb;
+}
+
+.vr_swiperbox.vr_green .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img:before {
+  border-color: transparent transparent transparent #5cc5bb;
+}
+
+.vr_swiperbox.vr_green .vr_swiper_title {
+  color: #5cc5bb;
+}
+
+.vr_swiperbox.vr_black .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+  background: #ffc50d;
+}
+
+.vr_swiperbox.vr_black .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img:before {
+  border-color: transparent transparent transparent #ffc50d;
+}
+
+.vr_swiperbox.vr_black .vr_swiper_title {
+  color: #ffc50d;
+}
+
+.vr_swiperbox.vr_red .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+  background: #bf0000;
+}
+
+.vr_swiperbox.vr_red .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img:before {
+  border-color: transparent transparent transparent #bf0000;
+}
+
+.vr_swiperbox.vr_red .vr_swiper_title {
+  color: #bf0000;
+}
+
+.vr_swiperbox.vr_orange .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+  background: #ff7a1e;
+}
+
+.vr_swiperbox.vr_orange .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img:before {
+  border-color: transparent transparent transparent #ff7a1e;
+}
+
+.vr_swiperbox.vr_orange .vr_swiper_title {
+  color: #ff7a1e;
+}
+
+.vr_swiperbox.vr_purple .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+  background: #9f98f4;
+}
+
+.vr_swiperbox.vr_purple .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img:before {
+  border-color: transparent transparent transparent #9f98f4;
+}
+
+.vr_swiperbox.vr_purple .vr_swiper_title {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.vr_schedule_wrap .ve_time_select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 28px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .ve_time_select {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+}
+
+.vr_schedule_wrap .ve_time_select a {
+  padding: 14px 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+  background: #E5E5E5;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .ve_time_select a {
+    margin: 5px;
+    font-size: 1rem;
+  }
+}
+
+.vr_schedule_wrap .ve_time_select a.active {
+  color: #fff;
+  background: #E03A3A;
+}
+
+.vr_schedule_wrap .ve_time_select a:hover {
+  color: #fff;
+  background: #ff7e7e;
+}
+
+.vr_schedule_wrap .vr_schedule {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFE6E5;
+  border-radius: 24px;
+  margin: 0 30px;
+  padding: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 10px;
+    padding: 1rem;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table {
+  width: 150px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule .vr_time_table {
+    width: 100%;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block {
+  padding: 12px 8px 8px 8px;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block {
+    margin: 0 1% 10px 1%;
+    width: 48%;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block:last-child {
+    margin-bottom: 10px;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block .vr_time {
+  padding: 4px 12px 4px 8px;
+  color: #000;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block .vr_time .vr_number {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  margin-right: 4px;
+  text-align: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #E03A3A;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block .vr_offtitle {
+  padding: 4px 8px;
+  color: #AE1012;
+  line-height: 130%;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block:hover, .vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block.active {
+  background: #E03A3A;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block:hover .vr_time, .vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block.active .vr_time {
+  color: #E03A3A;
+  background: #fff;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block:hover .vr_time .number, .vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block.active .vr_time .number {
+  color: #AE1012;
+  background: #fff;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block:hover .vr_offtitle, .vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block.active .vr_offtitle {
+  color: #fff;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block.active {
+  padding-right: 28px;
+  width: 150px;
+  border-radius: 10px 0 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule .vr_time_table .vr_time_block.active {
+    width: 48%;
+    padding-right: 8px;
+    border-radius: 10px;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap {
+  width: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_title {
+    margin-bottom: 10px;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_title .vr_exhibition_logo {
+  margin-right: 1rem;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_title .vr_exhibition_logo img {
+  max-height: 100px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_title .vr_exhibition_name {
+  font-size: 26px;
+  font-weight: bold;
+  color: #444;
+  max-width: 400px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card {
+  border: 3px solid #E03A3A;
+  border-radius: 10px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time {
+  color: #fff;
+  font-weight: bold;
+  font-size: 28px;
+  background: #E03A3A;
+  text-align: center;
+  padding: .5rem;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time .vr_number {
+  color: #E03A3A;
+  background: #fff;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  margin-right: .5rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_ceo {
+  padding: .5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_ceo .vr_ceo_pic {
+  width: 58px;
+  height: 58px;
+  margin-right: 8px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_ceo .vr_ceo_pic img {
+  width: 58px;
+  height: 58px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_ceo .vr_ceo_info .vr_ceo_name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_ceo .vr_ceo_info .vr_ceo_position {
+  color: #444;
+  font-size: 18px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 2px solid #444;
+  padding: 24px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info .vr_info_text {
+  -ms-flex-preferred-size: 66%;
+      flex-basis: 66%;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #AE1012;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_content {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info .vr_info_link {
+  font-size: 16px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info .vr_info_link .icon_globe {
+  margin-bottom: 4px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info .vr_info_link .icon_globe:before,
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_info .vr_info_link .icon_star:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_frame {
+  position: relative;
+  text-align: right;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_frame .vr_fullscreen {
+  position: relative;
+  background: #ff7e7e;
+  color: #fff;
+  text-decoration: none;
+  padding: 4px 16px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.vr_schedule_wrap .vr_schedule .vr_exhibition_wrap .vr_exhibition_frame iframe {
+  width: 100%;
+  height: 650px;
+}
+
+.vr_schedule_wrap.vr_blue .ve_time_select a.active {
+  background: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .ve_time_select a:hover {
+  background: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_schedule {
+  background: #dcf0ff;
+}
+
+.vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block .vr_time .vr_number {
+  background: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block .vr_offtitle {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block:hover, .vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block.active {
+  background: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block:hover .vr_time, .vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block.active .vr_time {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block:hover .vr_offtitle, .vr_schedule_wrap.vr_blue .vr_schedule .vr_time_table .vr_time_block.active .vr_offtitle {
+  color: #fff;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card {
+  border: 3px solid #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time {
+  background: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time .vr_number {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_title {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .vr_info_link {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .icon_globe {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .icon_globe a {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .icon_globe:before {
+  background: url("../images/vr_icon03_blue.png");
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .icon_star {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .icon_star a {
+  color: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_info .icon_star:before {
+  background: url("../images/vr_icon04_blue.png");
+}
+
+.vr_schedule_wrap.vr_blue .vr_exhibition_wrap .vr_exhibition_frame .vr_fullscreen {
+  background: #1b9cfe;
+}
+
+.vr_schedule_wrap.vr_green .ve_time_select a.active {
+  background: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .ve_time_select a:hover {
+  background: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_schedule {
+  background: #b7e2de;
+}
+
+.vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block .vr_time .vr_number {
+  background: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block .vr_offtitle {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block:hover, .vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block.active {
+  background: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block:hover .vr_time, .vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block.active .vr_time {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block:hover .vr_offtitle, .vr_schedule_wrap.vr_green .vr_schedule .vr_time_table .vr_time_block.active .vr_offtitle {
+  color: #fff;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card {
+  border: 3px solid #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time {
+  background: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time .vr_number {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_title {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_info .icon_globe {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_info .icon_globe a {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_info .icon_globe:before {
+  background: url("../images/vr_icon03_green.png");
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_info .icon_star {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_info .icon_star a {
+  color: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_info .icon_star:before {
+  background: url("../images/vr_icon04_green.png");
+}
+
+.vr_schedule_wrap.vr_green .vr_exhibition_wrap .vr_exhibition_frame .vr_fullscreen {
+  background: #5cc5bb;
+}
+
+.vr_schedule_wrap.vr_black .ve_time_select a.active {
+  background: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .ve_time_select a:hover {
+  background: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_schedule {
+  background: #fff7c0;
+}
+
+.vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block .vr_time .vr_number {
+  background: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block .vr_offtitle {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block:hover, .vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block.active {
+  background: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block:hover .vr_time, .vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block.active .vr_time {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block:hover .vr_offtitle, .vr_schedule_wrap.vr_black .vr_schedule .vr_time_table .vr_time_block.active .vr_offtitle {
+  color: #fff;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card {
+  border: 3px solid #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time {
+  background: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time .vr_number {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_title {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_info .icon_globe {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_info .icon_globe a {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_info .icon_globe:before {
+  background: url("../images/vr_icon03_black.png");
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_info .icon_star {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_info .icon_star a {
+  color: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_info .icon_star:before {
+  background: url("../images/vr_icon04_black.png");
+}
+
+.vr_schedule_wrap.vr_black .vr_exhibition_wrap .vr_exhibition_frame .vr_fullscreen {
+  background: #ffc50d;
+}
+
+.vr_schedule_wrap.vr_red .ve_time_select a.active {
+  background: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .ve_time_select a:hover {
+  background: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_schedule {
+  background: #FFE6E5;
+}
+
+.vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block .vr_time .vr_number {
+  background: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block .vr_offtitle {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block:hover, .vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block.active {
+  background: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block:hover .vr_time, .vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block.active .vr_time {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block:hover .vr_offtitle, .vr_schedule_wrap.vr_red .vr_schedule .vr_time_table .vr_time_block.active .vr_offtitle {
+  color: #fff;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card {
+  border: 3px solid #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time {
+  background: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time .vr_number {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_title {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_info .icon_globe {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_info .icon_globe a {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_info .icon_globe:before {
+  background: url("../images/vr_icon03_red.png");
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_info .icon_star {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_info .icon_star a {
+  color: #bf0000;
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_info .icon_star:before {
+  background: url("../images/vr_icon04_red.png");
+}
+
+.vr_schedule_wrap.vr_red .vr_exhibition_wrap .vr_exhibition_frame .vr_fullscreen {
+  background: #bf0000;
+}
+
+.vr_schedule_wrap.vr_orange .ve_time_select a.active {
+  background: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .ve_time_select a:hover {
+  background: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_schedule {
+  background: #ffc49c;
+}
+
+.vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block .vr_time .vr_number {
+  background: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block .vr_offtitle {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block:hover, .vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block.active {
+  background: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block:hover .vr_time, .vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block.active .vr_time {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block:hover .vr_offtitle, .vr_schedule_wrap.vr_orange .vr_schedule .vr_time_table .vr_time_block.active .vr_offtitle {
+  color: #fff;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card {
+  border: 3px solid #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time {
+  background: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time .vr_number {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_title {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_info .icon_globe {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_info .icon_globe a {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_info .icon_globe:before {
+  background: url("../images/vr_icon03_orange.png");
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_info .icon_star {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_info .icon_star a {
+  color: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_info .icon_star:before {
+  background: url("../images/vr_icon04_orange.png");
+}
+
+.vr_schedule_wrap.vr_orange .vr_exhibition_wrap .vr_exhibition_frame .vr_fullscreen {
+  background: #ff7a1e;
+}
+
+.vr_schedule_wrap.vr_purple .ve_time_select a.active {
+  background: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .ve_time_select a:hover {
+  background: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_schedule {
+  background: #e1ddfe;
+}
+
+.vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block .vr_time .vr_number {
+  background: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block .vr_offtitle {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block:hover, .vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block.active {
+  background: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block:hover .vr_time, .vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block.active .vr_time {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block:hover .vr_offtitle, .vr_schedule_wrap.vr_purple .vr_schedule .vr_time_table .vr_time_block.active .vr_offtitle {
+  color: #fff;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card {
+  border: 3px solid #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time {
+  background: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_header .vr_exhibition_card .vr_exhibition_time .vr_number {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_info .vr_info_text .vr_info_title {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_info .icon_globe {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_info .icon_globe a {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_info .icon_globe:before {
+  background: url("../images/vr_icon03_purple.png");
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_info .icon_star {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_info .icon_star a {
+  color: #9f98f4;
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_info .icon_star:before {
+  background: url("../images/vr_icon04_purple.png");
+}
+
+.vr_schedule_wrap.vr_purple .vr_exhibition_wrap .vr_exhibition_frame .vr_fullscreen {
+  background: #9f98f4;
+}
+/*# sourceMappingURL=vr.css.map */

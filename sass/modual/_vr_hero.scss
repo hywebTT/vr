@@ -1,0 +1,16 @@
+@import '../variable'; //變數
+.vr_hero {
+    width: 100%;
+    // height: 107px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: flex;
+    background: #ccc;
+    // justify-content: center;
+    // align-items: center;
+    // flex-wrap: nowrap;
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+}

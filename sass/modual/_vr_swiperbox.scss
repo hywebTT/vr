@@ -1,0 +1,182 @@
+@import '../variable'; //變數
+$site: index($themeColor, red);
+.vr_swiperbox {
+  display: block;
+  width: 65%;
+  padding: 1rem 0;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+  .vr_swiper_title {
+    font-size: 45px;
+    font-weight: 900;
+    margin: 1rem .5rem;
+    line-height: 41px;
+    color: #666;
+  }
+  .swiper {
+    box-sizing: border-box;
+    .swiper-wrapper {
+      .swiper-slide {
+        padding: .5rem;
+        box-sizing: border-box;
+        .vr_swiper_text {
+          color: #333;
+          font-size: 22px;
+          font-weight: 600;
+          line-height: 160%;
+          letter-spacing: 0px;
+          margin-bottom: 15px;
+        }
+        .vr_swiper_more {
+          // position: absolute;
+          // left: -41px;
+          // bottom: 1em;
+          // top: 153px;
+          background: #ffffff;
+          // overflow: hidden;
+          padding: 8px;
+          transition: all .6s;
+          border-radius: 12px;
+          display: flex;
+          box-shadow: 0px 0px 10px #9d9c9c;
+          width: 360px;
+          @media screen and (max-width: 768px) {
+            width: 100%;
+            box-sizing: border-box;
+          }
+          .vr_swiper_img {
+            padding: 6px;
+            border-radius: 5px;
+            margin-right: 12px;
+            position: relative;
+            background: #666;
+            &:before {
+              content: "";
+              position: absolute;
+              right: -20px;
+              top: 34px;
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 5px 0 5px 20px;
+              border-color: transparent transparent transparent #666;
+            }
+            img {
+              width: 72px;
+              height: 72px;
+              display: block;
+            }
+          }
+          .vr_swiper_salespbox {
+            background: #f2f2f2;
+            padding: 8px;
+            flex-grow: 2;
+            color: #646464;
+            .vr_swiper_salesname {
+              font-size: 24px;
+              font-weight: 900;
+              line-height: 34px;
+              white-space: nowrap;
+              @media screen and (max-width: 768px) {
+                font-size: 20px;
+                white-space: normal;
+              }
+            }
+            .vr_swiper_salesposition {}
+          }
+        }
+      }
+      .swiper-button-prev {
+        left: 0;
+      }
+      .swiper-button-next {
+        right: 0;
+      }
+    }
+  }
+  &.vr_blue {
+    .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+      $site: index($themeColor, blue);
+      background: nth($mainColor, $site);
+      &:before {
+        $site: index($themeColor, blue);
+        border-color: transparent transparent transparent nth($mainColor, $site);
+      }
+    }
+    .vr_swiper_title {
+      $site: index($themeColor, blue);
+      color: nth($mainColor, $site);
+    }
+  }
+  &.vr_green {
+    .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+      $site: index($themeColor, green);
+      background: nth($mainColor, $site);
+      &:before {
+        $site: index($themeColor, green);
+        border-color: transparent transparent transparent nth($mainColor, $site);
+      }
+    }
+    .vr_swiper_title {
+      $site: index($themeColor, green);
+      color: nth($mainColor, $site);
+    }
+  }
+  &.vr_black {
+    .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+      $site: index($themeColor, black);
+      background: nth($mainColor, $site);
+      &:before {
+        $site: index($themeColor, black);
+        border-color: transparent transparent transparent nth($mainColor, $site);
+      }
+    }
+    .vr_swiper_title {
+      $site: index($themeColor, black);
+      color: nth($mainColor, $site);
+    }
+  }
+  &.vr_red {
+    .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+      $site: index($themeColor, red);
+      background: nth($mainColor, $site);
+      &:before {
+        $site: index($themeColor, red);
+        border-color: transparent transparent transparent nth($mainColor, $site);
+      }
+    }
+    .vr_swiper_title {
+      $site: index($themeColor, red);
+      color: nth($mainColor, $site);
+    }
+  }
+  &.vr_orange {
+    .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+      $site: index($themeColor, orange);
+      background: nth($mainColor, $site);
+      &:before {
+        $site: index($themeColor, orange);
+        border-color: transparent transparent transparent nth($mainColor, $site);
+      }
+    }
+    .vr_swiper_title {
+      $site: index($themeColor, orange);
+      color: nth($mainColor, $site);
+    }
+  }
+  &.vr_purple {
+    .swiper .swiper-wrapper .swiper-slide .vr_swiper_more .vr_swiper_img {
+      $site: index($themeColor, purple);
+      background: nth($mainColor, $site);
+      &:before {
+        $site: index($themeColor, purple);
+        border-color: transparent transparent transparent nth($mainColor, $site);
+      }
+    }
+    .vr_swiper_title {
+      $site: index($themeColor, purple);
+      color: nth($mainColor, $site);
+    }
+  }
+}

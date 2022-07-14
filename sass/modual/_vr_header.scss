@@ -1,0 +1,80 @@
+@import '../variable'; //變數
+$site: index($themeColor, red);
+.vr_header {
+  width: 100%;
+  height: 108px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+  .vr_logo {
+    // width: 25%;
+    // @media screen and (max-width: 768px) {
+    //   width: 80%;
+    // }
+    img {
+      max-height: 100px;
+      @media screen and (max-width: 1200px) {
+        max-height: 70px;
+      }
+      @media screen and (max-width: 900px) {
+        max-height: 60px;
+      }
+    }
+  }
+  .vr_title {
+    // width: 70%;
+    margin: 0;
+    // @media screen and (max-width: 768px) {
+    //   width: 90%;
+    // }
+    img {
+      max-height: 100px;
+      @media screen and (max-width: 1200px) {
+        max-height: 70px;
+      }
+      @media screen and (max-width: 900px) {
+        max-height: 60px;
+      }
+    }
+  }
+  span {
+    font-size: 38px;
+    width: 5%;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &.vr_blue {
+    $site: index($themeColor, blue);
+    background: nth($headerColor, $site);
+  }
+  &.vr_green {
+    $site: index($themeColor, green);
+    background: nth($headerColor, $site);
+  }
+  &.vr_black {
+    $site: index($themeColor, black);
+    background: nth($headerColor, $site);
+  }
+  &.vr_red {
+    $site: index($themeColor, red);
+    background: nth($headerColor, $site);
+  }
+  &.vr_orange {
+    $site: index($themeColor, orange);
+    background: nth($headerColor, $site);
+  }
+  &.vr_purple {
+    $site: index($themeColor, purple);
+    background: nth($headerColor, $site);
+  }
+}

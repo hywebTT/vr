@@ -1,0 +1,802 @@
+@import '../variable'; //變數
+$site: index($themeColor, red);
+.vr_schedule_wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  .ve_time_select {
+    display: flex;
+    justify-content: center;
+    margin: 28px 0;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+      margin: 1rem 0;
+    }
+    a {
+      padding: 14px 24px;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #000;
+      font-size: 20px;
+      font-weight: bold;
+      background: #E5E5E5;
+      border-radius: 10px;
+      @media screen and (max-width: 768px) {
+        margin: 5px;
+        font-size: 1rem;
+      }
+      &.active {
+        color: #fff;
+        background: #E03A3A;
+      }
+      &:hover {
+        color: #fff;
+        background: #ff7e7e;
+      }
+    }
+  }
+  .vr_schedule {
+    display: flex;
+    background: #FFE6E5;
+    border-radius: 24px;
+    margin: 0 30px;
+    padding: 28px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      margin: 0 10px;
+      padding: 1rem;
+    }
+    .vr_time_table {
+      width: 150px;
+      margin-right: 20px;
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      .vr_time_block {
+        padding: 12px 8px 8px 8px;
+        background: #fff;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        @media screen and (max-width: 768px) {
+          margin: 0 1% 10px 1%;
+          width: 48%;
+          align-self: stretch;
+          box-sizing: border-box;
+        }
+        &:last-child {
+          margin-bottom: 0;
+          @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+          }
+        }
+        .vr_time {
+          padding: 4px 12px 4px 8px;
+          color: #000;
+          border-radius: 30px;
+          display: flex;
+          .vr_number {
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            display: inline-block;
+            margin-right: 4px;
+            text-align: center;
+            border-radius: 50%;
+            color: #fff;
+            background: #E03A3A;
+          }
+        }
+        .vr_offtitle {
+          padding: 4px 8px;
+          color: #AE1012;
+          line-height: 130%;
+        }
+        &:hover,
+        &.active {
+          background: #E03A3A;
+          .vr_time {
+            color: #E03A3A;
+            background: #fff;
+            .number {
+              color: #AE1012;
+              background: #fff;
+            }
+          }
+          .vr_offtitle {
+            color: #fff;
+          }
+        }
+        &.active {
+          padding-right: 28px;
+          width: 150px;
+          border-radius: 10px 0 0 10px;
+          @media screen and (max-width: 768px) {
+            width: 48%;
+            padding-right: 8px;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    .vr_exhibition_wrap {
+      width: auto;
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      flex-grow: 2;
+      .vr_exhibition_header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+        overflow: hidden;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+        .vr_exhibition_title {
+          display: flex;
+          align-items: center;
+          @media screen and (max-width: 768px) {
+            margin-bottom: 10px;
+          }
+          .vr_exhibition_logo {
+            margin-right: 1rem;
+            img {
+              max-height: 100px;
+            }
+          }
+          .vr_exhibition_name {
+            font-size: 26px;
+            font-weight: bold;
+            color: #444;
+            max-width: 400px;
+          }
+        }
+        .vr_exhibition_card {
+          border: 3px solid #E03A3A;
+          border-radius: 10px;
+          .vr_exhibition_time {
+            color: #fff;
+            font-weight: bold;
+            font-size: 28px;
+            background: #E03A3A;
+            text-align: center;
+            padding: .5rem;
+            .vr_number {
+              color: #E03A3A;
+              background: #fff;
+              height: 30px;
+              width: 30px;
+              line-height: 30px;
+              margin-right: .5rem;
+              border-radius: 50%;
+              display: inline-block;
+            }
+          }
+          .vr_ceo {
+            padding: .5rem;
+            display: flex;
+            align-items: center;
+            .vr_ceo_pic {
+              width: 58px;
+              height: 58px;
+              margin-right: 8px;
+              img {
+                width: 58px;
+                height: 58px;
+              }
+            }
+            .vr_ceo_info {
+              .vr_ceo_name {
+                font-size: 20px;
+                font-weight: bold;
+              }
+              .vr_ceo_position {
+                color: #444;
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+      .vr_exhibition_info {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #444;
+        padding: 24px 0;
+        @media screen and (max-width: 768px) {
+          flex-direction: column;
+        }
+        .vr_info_text {
+          flex-basis: 66%;
+          .vr_info_title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #AE1012;
+          }
+          .vr_info_content {
+            font-size: 18px;
+            font-weight: bold;
+          }
+        }
+        .vr_info_link {
+          font-size: 16px;
+          flex-basis: 33%;
+          a {}
+          .icon_globe {
+            margin-bottom: 4px;
+          }
+          .icon_globe,
+          .icon_star {
+            a {}
+            &:before {
+              content: "";
+              width: 30px;
+              height: 30px;
+              display: inline-block;
+              margin-right: 8px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .vr_exhibition_frame {
+        position: relative;
+        text-align: right;
+        .vr_fullscreen {
+          position: relative;
+          background: #ff7e7e;
+          color: #fff;
+          text-decoration: none;
+          padding: 4px 16px;
+          border-radius: 4px;
+          display: inline-block;
+          margin-bottom: 8px;
+        }
+        iframe {
+          width: 100%;
+          height: 650px;
+        }
+      }
+    }
+  }
+  &.vr_blue {
+    .ve_time_select {
+      a.active {
+        $site: index($themeColor, blue);
+        background: nth($mainColor, $site);
+      }
+      a:hover {
+        $site: index($themeColor, blue);
+        background: nth($mainColor, $site);
+      }
+    }
+    .vr_schedule {
+      $site: index($themeColor, blue);
+      background: nth($lightColor, $site);
+      .vr_time_table {
+        .vr_time_block {
+          .vr_time {
+            .vr_number {
+              $site: index($themeColor, blue);
+              background: nth($mainColor, $site);
+            }
+          }
+          .vr_offtitle {
+            $site: index($themeColor, blue);
+            color: nth($headerColor, $site);
+          }
+          &:hover,
+          &.active {
+            $site: index($themeColor, blue);
+            background: nth($mainColor, $site);
+            .vr_time {
+              $site: index($themeColor, blue);
+              color: nth($headerColor, $site);
+            }
+            .vr_offtitle {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .vr_exhibition_wrap {
+      .vr_exhibition_header .vr_exhibition_card {
+        $site: index($themeColor, blue);
+        border: 3px solid nth($mainColor, $site);
+        .vr_exhibition_time {
+          $site: index($themeColor, blue);
+          background: nth($mainColor, $site);
+          .vr_number {
+            $site: index($themeColor, blue);
+            color: nth($mainColor, $site);
+          }
+        }
+      }
+      .vr_exhibition_info {
+        .vr_info_text .vr_info_title {
+          $site: index($themeColor, blue);
+          color: nth($headerColor, $site);
+        }
+        .vr_info_link {
+          $site: index($themeColor, blue);
+          color: nth($linkColor, $site);
+        }
+        .icon_globe {
+          $site: index($themeColor, blue);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, blue);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon03_blue.png");
+          }
+        }
+        .icon_star {
+          $site: index($themeColor, blue);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, blue);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon04_blue.png");
+          }
+        }
+      }
+      .vr_exhibition_frame .vr_fullscreen {
+        $site: index($themeColor, blue);
+        background: nth($linkColor, $site);
+      }
+    }
+  }
+  &.vr_green {
+    .ve_time_select {
+      a.active {
+        $site: index($themeColor, green);
+        background: nth($mainColor, $site);
+      }
+      a:hover {
+        $site: index($themeColor, green);
+        background: nth($mainColor, $site);
+      }
+    }
+    .vr_schedule {
+      $site: index($themeColor, green);
+      background: nth($lightColor, $site);
+      .vr_time_table {
+        .vr_time_block {
+          .vr_time {
+            .vr_number {
+              $site: index($themeColor, green);
+              background: nth($mainColor, $site);
+            }
+          }
+          .vr_offtitle {
+            $site: index($themeColor, green);
+            color: nth($headerColor, $site);
+          }
+          &:hover,
+          &.active {
+            $site: index($themeColor, green);
+            background: nth($mainColor, $site);
+            .vr_time {
+              $site: index($themeColor, green);
+              color: nth($headerColor, $site);
+            }
+            .vr_offtitle {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .vr_exhibition_wrap {
+      .vr_exhibition_header .vr_exhibition_card {
+        $site: index($themeColor, green);
+        border: 3px solid nth($mainColor, $site);
+        .vr_exhibition_time {
+          $site: index($themeColor, green);
+          background: nth($mainColor, $site);
+          .vr_number {
+            $site: index($themeColor, green);
+            color: nth($mainColor, $site);
+          }
+        }
+      }
+      .vr_exhibition_info {
+        .vr_info_text .vr_info_title {
+          $site: index($themeColor, green);
+          color: nth($headerColor, $site);
+        }
+        .icon_globe {
+          $site: index($themeColor, green);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, green);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon03_green.png");
+          }
+        }
+        .icon_star {
+          $site: index($themeColor, green);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, green);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon04_green.png");
+          }
+        }
+      }
+      .vr_exhibition_frame .vr_fullscreen {
+        $site: index($themeColor, green);
+        background: nth($linkColor, $site);
+      }
+    }
+  }
+  &.vr_black {
+    .ve_time_select {
+      a.active {
+        $site: index($themeColor, black);
+        background: nth($mainColor, $site);
+      }
+      a:hover {
+        $site: index($themeColor, black);
+        background: nth($mainColor, $site);
+      }
+    }
+    .vr_schedule {
+      $site: index($themeColor, black);
+      background: nth($lightColor, $site);
+      .vr_time_table {
+        .vr_time_block {
+          .vr_time {
+            .vr_number {
+              $site: index($themeColor, black);
+              background: nth($mainColor, $site);
+            }
+          }
+          .vr_offtitle {
+            $site: index($themeColor, black);
+            color: nth($headerColor, $site);
+          }
+          &:hover,
+          &.active {
+            $site: index($themeColor, black);
+            background: nth($mainColor, $site);
+            .vr_time {
+              $site: index($themeColor, black);
+              color: nth($headerColor, $site);
+            }
+            .vr_offtitle {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .vr_exhibition_wrap {
+      .vr_exhibition_header .vr_exhibition_card {
+        $site: index($themeColor, black);
+        border: 3px solid nth($mainColor, $site);
+        .vr_exhibition_time {
+          $site: index($themeColor, black);
+          background: nth($mainColor, $site);
+          .vr_number {
+            $site: index($themeColor, black);
+            color: nth($mainColor, $site);
+          }
+        }
+      }
+      .vr_exhibition_info {
+        .vr_info_text .vr_info_title {
+          $site: index($themeColor, black);
+          color: nth($headerColor, $site);
+        }
+        .icon_globe {
+          $site: index($themeColor, black);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, black);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon03_black.png");
+          }
+        }
+        .icon_star {
+          $site: index($themeColor, black);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, black);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon04_black.png");
+          }
+        }
+      }
+      .vr_exhibition_frame .vr_fullscreen {
+        $site: index($themeColor, black);
+        background: nth($linkColor, $site);
+      }
+    }
+  }
+  &.vr_red {
+    .ve_time_select {
+      a.active {
+        $site: index($themeColor, red);
+        background: nth($mainColor, $site);
+      }
+      a:hover {
+        $site: index($themeColor, red);
+        background: nth($mainColor, $site);
+      }
+    }
+    .vr_schedule {
+      $site: index($themeColor, red);
+      background: nth($lightColor, $site);
+      .vr_time_table {
+        .vr_time_block {
+          .vr_time {
+            .vr_number {
+              $site: index($themeColor, red);
+              background: nth($mainColor, $site);
+            }
+          }
+          .vr_offtitle {
+            $site: index($themeColor, red);
+            color: nth($headerColor, $site);
+          }
+          &:hover,
+          &.active {
+            $site: index($themeColor, red);
+            background: nth($mainColor, $site);
+            .vr_time {
+              $site: index($themeColor, red);
+              color: nth($headerColor, $site);
+            }
+            .vr_offtitle {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .vr_exhibition_wrap {
+      .vr_exhibition_header .vr_exhibition_card {
+        $site: index($themeColor, red);
+        border: 3px solid nth($mainColor, $site);
+        .vr_exhibition_time {
+          $site: index($themeColor, red);
+          background: nth($mainColor, $site);
+          .vr_number {
+            $site: index($themeColor, red);
+            color: nth($mainColor, $site);
+          }
+        }
+      }
+      .vr_exhibition_info {
+        .vr_info_text .vr_info_title {
+          $site: index($themeColor, red);
+          color: nth($headerColor, $site);
+        }
+        .icon_globe {
+          $site: index($themeColor, red);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, red);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon03_red.png");
+          }
+        }
+        .icon_star {
+          $site: index($themeColor, red);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, red);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon04_red.png");
+          }
+        }
+      }
+      .vr_exhibition_frame .vr_fullscreen {
+        $site: index($themeColor, red);
+        background: nth($linkColor, $site);
+      }
+    }
+  }
+  &.vr_orange {
+    .ve_time_select {
+      a.active {
+        $site: index($themeColor, orange);
+        background: nth($mainColor, $site);
+      }
+      a:hover {
+        $site: index($themeColor, orange);
+        background: nth($mainColor, $site);
+      }
+    }
+    .vr_schedule {
+      $site: index($themeColor, orange);
+      background: nth($lightColor, $site);
+      .vr_time_table {
+        .vr_time_block {
+          .vr_time {
+            .vr_number {
+              $site: index($themeColor, orange);
+              background: nth($mainColor, $site);
+            }
+          }
+          .vr_offtitle {
+            $site: index($themeColor, orange);
+            color: nth($headerColor, $site);
+          }
+          &:hover,
+          &.active {
+            $site: index($themeColor, orange);
+            background: nth($mainColor, $site);
+            .vr_time {
+              $site: index($themeColor, orange);
+              color: nth($headerColor, $site);
+            }
+            .vr_offtitle {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .vr_exhibition_wrap {
+      .vr_exhibition_header .vr_exhibition_card {
+        $site: index($themeColor, orange);
+        border: 3px solid nth($mainColor, $site);
+        .vr_exhibition_time {
+          $site: index($themeColor, orange);
+          background: nth($mainColor, $site);
+          .vr_number {
+            $site: index($themeColor, orange);
+            color: nth($mainColor, $site);
+          }
+        }
+      }
+      .vr_exhibition_info {
+        .vr_info_text .vr_info_title {
+          $site: index($themeColor, orange);
+          color: nth($headerColor, $site);
+        }
+        .icon_globe {
+          $site: index($themeColor, orange);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, orange);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon03_orange.png");
+          }
+        }
+        .icon_star {
+          $site: index($themeColor, orange);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, orange);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon04_orange.png");
+          }
+        }
+      }
+      .vr_exhibition_frame .vr_fullscreen {
+        $site: index($themeColor, orange);
+        background: nth($linkColor, $site);
+      }
+    }
+  }
+  &.vr_purple {
+    .ve_time_select {
+      a.active {
+        $site: index($themeColor, purple);
+        background: nth($mainColor, $site);
+      }
+      a:hover {
+        $site: index($themeColor, purple);
+        background: nth($mainColor, $site);
+      }
+    }
+    .vr_schedule {
+      $site: index($themeColor, purple);
+      background: nth($lightColor, $site);
+      .vr_time_table {
+        .vr_time_block {
+          .vr_time {
+            .vr_number {
+              $site: index($themeColor, purple);
+              background: nth($mainColor, $site);
+            }
+          }
+          .vr_offtitle {
+            $site: index($themeColor, purple);
+            color: nth($headerColor, $site);
+          }
+          &:hover,
+          &.active {
+            $site: index($themeColor, purple);
+            background: nth($mainColor, $site);
+            .vr_time {
+              $site: index($themeColor, purple);
+              color: nth($headerColor, $site);
+            }
+            .vr_offtitle {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+    .vr_exhibition_wrap {
+      .vr_exhibition_header .vr_exhibition_card {
+        $site: index($themeColor, purple);
+        border: 3px solid nth($mainColor, $site);
+        .vr_exhibition_time {
+          $site: index($themeColor, purple);
+          background: nth($mainColor, $site);
+          .vr_number {
+            $site: index($themeColor, purple);
+            color: nth($mainColor, $site);
+          }
+        }
+      }
+      .vr_exhibition_info {
+        .vr_info_text .vr_info_title {
+          $site: index($themeColor, purple);
+          color: nth($headerColor, $site);
+        }
+        .icon_globe {
+          $site: index($themeColor, purple);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, purple);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon03_purple.png");
+          }
+        }
+        .icon_star {
+          $site: index($themeColor, purple);
+          color: nth($linkColor, $site);
+          a {
+            $site: index($themeColor, purple);
+            color: nth($linkColor, $site);
+          }
+          &:before {
+            background: url("../images/vr_icon04_purple.png");
+          }
+        }
+      }
+      .vr_exhibition_frame .vr_fullscreen {
+        $site: index($themeColor, purple);
+        background: nth($linkColor, $site);
+      }
+    }
+  }
+}
